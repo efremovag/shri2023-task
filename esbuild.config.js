@@ -9,6 +9,7 @@ esbuild
     bundle: true,
     minify: true,
     treeShaking: true,
+    //loader: { '.js': 'jsx' },
     loader: {
       '.png': 'file',
       '.svg': 'file',

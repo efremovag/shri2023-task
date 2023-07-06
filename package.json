@@ -1,0 +1,14 @@
+{
+  "name": "shri2023-task",
+  "version": "0.0.1",
+  "scripts": {
+    "build": "node esbuild.config.js"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "esbuild": "0.18.11"
+  }
+}

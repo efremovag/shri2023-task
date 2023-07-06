@@ -4,6 +4,7 @@ esbuild
   .build({
     entryPoints: ['src/script.jsx', 'src/styles.css', 'src/reset.css'],
     outdir: 'docs/',
+    charset: 'utf8',
     assetNames: 'assets/[name]',
     bundle: true,
     minify: true,

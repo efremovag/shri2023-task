@@ -1,4 +1,5 @@
 const esbuild = require('esbuild');
+const { compress } = require('esbuild-plugin-compress');
 
 esbuild
   .build({
@@ -14,5 +15,14 @@ esbuild
       '.png': 'file',
       '.svg': 'file',
     },
+    write: false,
+    plugins: [
+      compress({
+        exclude: ['**/*.map'],
+        emitOrigin: false,
+        gzip: true,
+        brotli: false,
+      }),
+    ],
   })
   .catch(() => process.exit(1));

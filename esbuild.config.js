@@ -13,6 +13,7 @@ esbuild
     loader: {
       '.png': 'file',
       '.svg': 'file',
+      '.jpg': 'file',
     },
   })
   .catch(() => process.exit(1));

@@ -2,7 +2,7 @@ const esbuild = require('esbuild');
 
 esbuild
   .build({
-    entryPoints: ['src/script.jsx', 'src/styles.css', 'src/reset.css'],
+    entryPoints: ['src/script.jsx', 'src/styles.css'],
     outdir: 'docs/',
     charset: 'utf8',
     assetNames: 'assets/[name]',
